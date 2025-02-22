@@ -184,9 +184,6 @@
 
 
 
-
-
-
 </ul>
 
     </div>
@@ -393,26 +390,15 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-solusi">Jenis Solusi</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi">Satu Solusi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-ada-solusi">Tidak Ada Solusi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-tak-terhingga">Solusi Tak Terhingga</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-tak-terhingga">Solusi Tak Terhingga</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Definisi Sistem Persamaan Linear</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Jenis - Jenis Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Sistem Persamaan Linear Satu Variabel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Sistem Persamaan Linear Dua Variabel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Sistem Persamaan Linear Tiga Variabel</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Ciri-ciri Sistem Persamaan Linear</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Jenis Solusi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Satu Solusi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Tidak Ada Solusi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Solusi Tak Terhingga</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Eliminasi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian">Metode Penyelesaian</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subtitusi">Subtitusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks">Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gaus">Eliminasi Gaus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafik">Grafik</a></li>
 </ul>
 </li>
 </ul>
@@ -473,6 +459,7 @@ Contoh:</p>
 <li><p>Persamaan linear akan memiliki pangkat satu.</p></li>
 <li><p>Persamaan linear tidak memiliki perkalian variabel.</p></li>
 <li><p>Membentuk garis lurus</p></li>
+<li><p>Penjumlahan, pengurangan, perkalian, dan pembagian pada kedua ruas tidak akan mengubah bentuk nilai persamaan</p></li>
 </ol>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="jenis-solusi">
@@ -488,81 +475,29 @@ Contoh:</p>
 <section id="solusi-tak-terhingga">
 <h2>Solusi Tak Terhingga<a class="headerlink" href="#solusi-tak-terhingga" title="Link to this heading">#</a></h2>
 <p>Persamaan linear dengan dua variabel memiliki solusi tak terhingga. Grafik untuk sistem persamaan linear dengan solusi tak terhingga adalah grafik garis lurus yang saling tumpang tindih.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="metode-penyelesaian">
+<h1>Metode Penyelesaian<a class="headerlink" href="#metode-penyelesaian" title="Link to this heading">#</a></h1>
+<section id="subtitusi">
+<h2>Subtitusi<a class="headerlink" href="#subtitusi" title="Link to this heading">#</a></h2>
+<p>Cara menyelesaikan persamaan dengan memasukkan salah satu persamaan ke dalam persamaan yang lain.</p>
+</section>
+<section id="matriks">
+<h2>Matriks<a class="headerlink" href="#matriks" title="Link to this heading">#</a></h2>
+<p>Metode ini efektif untuk menyelesaikan Sistem Persamaan Linear Dua Variabel (SPLDV) atau lebih, terutama jika jumlah persamaan sama dengan jumlah variabel.</p>
+</section>
 <section id="eliminasi">
-<h3>Eliminasi<a class="headerlink" href="#eliminasi" title="Link to this heading">#</a></h3>
-</section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>Definisi Sistem Persamaan Linear<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>Sistem persamaan linear adalah sekumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem ini terdiri dari tiga persamaan dengan tiga variabel yaitu x, y, z. Sistem ini digunakan untuk mencari nilai variabel yang memenuhi semua persamaan dalam sistem tersebut secara bersamaan.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id2">
-<h1>Jenis - Jenis Sistem Persamaan Linear<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<section id="id3">
-<h2>Sistem Persamaan Linear Satu Variabel<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>Seperti dengan namanya, persamaan linear satu variabel tersebut akan memiliki satu variabel dengan pangkat 1.
-Contoh:</p>
-<ul>
-<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    ax + b = 0
-</pre></div>
-</div>
-</li>
-</ul>
-</section>
-<section id="id4">
-<h2>Sistem Persamaan Linear Dua Variabel<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>Persamaan linear dua variabel ini adalah sistem persamaan yang memiliki variabel berjumlah dua dengan pangkat 1.
-Contoh:</p>
-<ul>
-<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>     ax + by = c
-</pre></div>
-</div>
-</li>
-</ul>
-</section>
-<section id="id5">
-<h2>Sistem Persamaan Linear Tiga Variabel<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<p>Sistem persamaan yang terdiri dari tiga persamaan linear dengan tiga variabel yang saling berhubungan.
-Contoh:</p>
-<ul>
-<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    ax + by + cy = d
-</pre></div>
-</div>
-</li>
-</ul>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id6">
-<h1>Ciri-ciri Sistem Persamaan Linear<a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
-<ol class="arabic simple">
-<li><p>Persamaan linear akan memiliki pangkat satu.</p></li>
-<li><p>Persamaan linear tidak memiliki perkalian variabel.</p></li>
-<li><p>Membentuk garis lurus</p></li>
-<li><p>Penjumlahan, pengurangan, perkalian, dan pembagian pada kedua ruas tidak akan mengubah bentuk nilai persamaan</p></li>
-</ol>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id7">
-<h1>Jenis Solusi<a class="headerlink" href="#id7" title="Link to this heading">#</a></h1>
-<section id="id8">
-<h2>Satu Solusi<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
-<p>Jika persamaan saling berpotongan pada satu titik. Pada kondisi ini dua garis saling berpotongan.</p>
-</section>
-<section id="id9">
-<h2>Tidak Ada Solusi<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
-<p>Jika grafik persamaan linear sejajar, maka sistem persamaan linear tidak memiliki solusi. Dalam hal ini, tidak ada titik yang tidak ada garis yang saling berpotongan.</p>
-</section>
-<section id="id10">
-<h2>Solusi Tak Terhingga<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
-<p>Persamaan linear dengan dua variabel memiliki solusi tak terhingga. Grafik untuk sistem persamaan linear dengan solusi tak terhingga adalah grafik garis lurus yang saling tumpang tindih.</p>
-</section>
-<section id="id11">
-<h2>Eliminasi<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
-<p>Solusi eliminasi dalam sistem persamaan linear adalah cara menyelesaikan sistem persamaan linear dengan menghilangkan salah satu variabel. Metode ini efektif untuk menyelesaikan sistem persamaan linear dua variabel</p>
+<h2>Eliminasi<a class="headerlink" href="#eliminasi" title="Link to this heading">#</a></h2>
+<p>Solusi eliminasi dalam sistem persamaan linear adalah cara menyelesaikan sistem persamaan linear dengan menghilangkan salah satu variabel. Sehingga sistem menjadi lebih sederhana dan dapat diselesaikan secara langsung.</p>
 </section>
 <section id="eliminasi-gaus">
 <h2>Eliminasi Gaus<a class="headerlink" href="#eliminasi-gaus" title="Link to this heading">#</a></h2>
-<p>Eliminasi Gauss mengubah persamaan linear menjadi bentuk matriks.</p>
+<p>Eliminasi Gauss mengubah persamaan linear menjadi bentuk matriks yang lebih sederhana.</p>
+</section>
+<section id="grafik">
+<h2>Grafik<a class="headerlink" href="#grafik" title="Link to this heading">#</a></h2>
+<p>Metode ini digunakan untuk sistem persamaan dua variabel dengan cara menggambar grafik kedua persamaan dan mencari titik potongnya.</p>
 <iframe src="https://www.geogebra.org/graphing/jkt87zdx?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 </section>
 </section>
@@ -633,26 +568,15 @@ Contoh:</p>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-solusi">Jenis Solusi</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi">Satu Solusi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-ada-solusi">Tidak Ada Solusi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-tak-terhingga">Solusi Tak Terhingga</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-tak-terhingga">Solusi Tak Terhingga</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Definisi Sistem Persamaan Linear</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Jenis - Jenis Sistem Persamaan Linear</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Sistem Persamaan Linear Satu Variabel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Sistem Persamaan Linear Dua Variabel</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Sistem Persamaan Linear Tiga Variabel</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Ciri-ciri Sistem Persamaan Linear</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Jenis Solusi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Satu Solusi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Tidak Ada Solusi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Solusi Tak Terhingga</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Eliminasi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian">Metode Penyelesaian</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subtitusi">Subtitusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks">Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">Eliminasi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gaus">Eliminasi Gaus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafik">Grafik</a></li>
 </ul>
 </li>
 </ul>
