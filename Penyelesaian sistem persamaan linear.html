@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Penyelesaian Sistem Persamaan Linear &#8212; KAL</title>
+    <title>PENYELESAIAN SISTEM PERSAMAAN LINEAR &#8212; KAL</title>
   
   
   
@@ -186,7 +186,7 @@
 
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Penyelesaian Sistem Persamaan Linear</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">PENYELESAIAN SISTEM PERSAMAAN LINEAR</a></li>
 </ul>
 
     </div>
@@ -372,7 +372,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Penyelesaian Sistem Persamaan Linear</h1>
+    <h1>PENYELESAIAN SISTEM PERSAMAAN LINEAR</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,7 +383,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi Baris Elementer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eleminasi-gauss">Eleminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">Soal 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">Soal 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-3">Soal 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-4">Soal 4</a></li>
 </ul>
             </nav>
         </div>
@@ -396,103 +400,262 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="penyelesaian-sistem-persamaan-linear">
-<h1>Penyelesaian Sistem Persamaan Linear<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear" title="Link to this heading">#</a></h1>
+<h1>PENYELESAIAN SISTEM PERSAMAAN LINEAR<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear" title="Link to this heading">#</a></h1>
 <section id="operasi-baris-elementer">
 <h2>Operasi Baris Elementer<a class="headerlink" href="#operasi-baris-elementer" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Menukar baris pertama dengan baris kedua</p></li>
+<li><p>Perkalian satu baris dengan konstanta non-Nol</p></li>
+<li><p>Penjumlahan satu baris dengan konstanta non-Nol dengan baris yang lain.</p></li>
+</ol>
 </section>
-<section id="eliminasi-gauss">
-<h2>Eliminasi Gauss<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h2>
-<p>Soal 1:
-Selesaikan dengan menggunakan Eliminasi Gauss</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<section id="eleminasi-gauss">
+<h2>Eleminasi Gauss<a class="headerlink" href="#eleminasi-gauss" title="Link to this heading">#</a></h2>
+<p>Eliminasi gauss ini dapat dimanfaatkan untuk memecahkan sistem persamaan linear dengan merepresentasikan mengubah menjadi bentuk matriks, matriks tersebut lalu diubah kebentuk Eselon Baris melalui Operasi Baris Elementer. Kemudian sistem diselesaikan dengan substitusi balik.</p>
+<p>Contoh soal:
+Selesaikan dengan menggunakan Eliminasi Gauss.
+$<span class="math notranslate nohighlight">\(
 \begin{array}{cc}
-x_1+2x_2+3x_2&amp;=6\\
-2x_1+4x_2+6x_3&amp;=12\\
-x_3+x_2&amp;= 2
+x_1+2x_2+3x_3z&amp;=6\\
+2x_1+4_2+6x_12&amp;=4\\
+x_3-x_24&amp;=2
 \end{array}
-\end{split}\]</div>
-<p>Jawaban:</p>
-<p>Matriks augmentasi:
+\)</span>$</p>
+</section>
+<section id="soal-1">
+<h2>Soal 1<a class="headerlink" href="#soal-1" title="Link to this heading">#</a></h2>
+<p>Selesaikan dengan menggunakan eliminasi Gauss
 $<span class="math notranslate nohighlight">\(
-	\begin{bmatrix} 
-	1 &amp; 2 &amp; 3 &amp; | &amp;6\\
-	2 &amp; 4 &amp; 6 &amp; |&amp; 12\\
-	0 &amp; 1 &amp; 1 &amp; |&amp; 2\\
-	\end{bmatrix}
-	\quad
-	\)</span><span class="math notranslate nohighlight">\(
-Eliminasi koefisien pertama pada baris kedua
-\)</span><span class="math notranslate nohighlight">\(
-	\begin{bmatrix} 
-	1 &amp; 2 &amp; 3 &amp; | &amp;6\\
-	0 &amp; 0 &amp; 0 &amp; |&amp; 0\\
-	0 &amp; 1 &amp; 1 &amp; |&amp; 2\\
-	\end{bmatrix}
-	\quad
-	\)</span>$
-Tukar baris kedua dan ketiga</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-	\begin{bmatrix} 
-	1 &amp; 2 &amp; 3 &amp; | &amp;6\\
-	0 &amp; 1 &amp; 1 &amp; |&amp; 2\\
-	0 &amp; 0 &amp; 0 &amp; |&amp; 0\\
-	\end{bmatrix}
-	\quad
-	\end{split}\]</div>
-<p>Eliminasi koefisien pada baris pertama
-$<span class="math notranslate nohighlight">\(
-	\begin{bmatrix} 
-	1 &amp; 0 &amp; 1 &amp; | &amp;2\\
-	0 &amp; 1 &amp; 1 &amp; |&amp; 2\\
-	0 &amp; 0 &amp; 0 &amp; |&amp; 0\\
-	\end{bmatrix}
-	\quad
-	\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(
 \begin{array}{cc}
-x_1+x_2&amp;=2\\
+x_1+2x_2+3x_3&amp;=6\\
+2x_1+4x_2+6x_3&amp;=12\\
 x_2+x_3&amp;=2
 \end{array}
+\)</span><span class="math notranslate nohighlight">\(
+jawab:
+\)</span><span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp;6\\
+2 &amp; 4 &amp; 6 &amp; | &amp;12\\
+0 &amp; 1 &amp; 1 &amp; | &amp;2\\
+\end{bmatrix}
+\quad
 \)</span>$</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp;6\\
+0 &amp; 0 &amp; 0 &amp; | &amp;0\\
+0 &amp; 1 &amp; 1 &amp; | &amp;2\\
+\end{bmatrix}
+\quad
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; | &amp;6\\
+0 &amp; 1 &amp; 1 &amp; | &amp;2\\
+\end{bmatrix}
+\quad
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{array}{cc}
-x_1= 2-1=1\\
-x_2= 2-1=1\\
-x_3= 1\\
+x_2+x_3 = 2\\
+x_2 = 2 - x_3\\
 \end{array}
 \end{split}\]</div>
-<p>hasilnya:
-$<span class="math notranslate nohighlight">\(
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{array}{cc}
-x_1= 1 x_2 =1 x_3 =1
+x_1+2x_2+3x_3 = 6\\
+x_2 = 2 - x_3 \\
 \end{array}
-\)</span><span class="math notranslate nohighlight">\(
-Soal 2: 
-\)</span><span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{array}{cc}
-x_1+x_2+x_3&amp;= 3\\
-2x_1+x_3&amp;=3\\
+x_1 + 2(2-x_3)+3x_3 = 6\\
+x_1 + 4-2x_3+3x_3 = 6\\
+x_1+4+x_3\\
+x_1=2-x_3
+\end{array}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_1 = 2-x_3\\
+x_2=2-x_3\\
+x_3=x_3
+\end{array}
+\end{split}\]</div>
+<p>jadi hanya ada satu variabel maka sistem memiliki <em>tak hingga banyak solusi</em>.</p>
+</section>
+<section id="soal-2">
+<h2>Soal 2<a class="headerlink" href="#soal-2" title="Link to this heading">#</a></h2>
+<p>Selesaikan dengan menggunakan eliminasi Gauss.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_1+x_2+x_3&amp;=3\\
+2x_1+2x_3&amp;=5\\
 x_1+2x_2&amp;=3
 \end{array}
-\)</span>$
-Jawaban:</p>
-<p>Soal 3:
-$<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>jawab:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | &amp;3\\
+2 &amp; 0 &amp; 2 &amp; | &amp;5\\
+1 &amp; 2 &amp; 0 &amp; | &amp;3\\
+\end{bmatrix}
+\quad
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | &amp;3\\
+0 &amp; -2 &amp; 0 &amp; | &amp;-1\\
+0 &amp; 1 &amp; -1&amp; | &amp;0\\
+\end{bmatrix}
+\quad
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | &amp;3\\
+0 &amp; -2 &amp; 0 &amp; | &amp;-1\\
+0 &amp; 0 &amp; -1 &amp; | &amp;-1/2\\
+\end{bmatrix}
+\quad
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{array}{cc}
-2x_1+2x_2&amp;= 4\\
-x_1+x_2&amp;=2\\
+-x_3=-1/2\\
+x_3=1/2
 \end{array}
-\)</span>$</p>
-<p>Soal 4:
-$<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+-2x_2=-1\\
+x_2=1/2
+\end{array}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_1+x_2+x_3=3\\
+x_1+1/2+1/2=3\\
+x_1+1=3\\
+x_1=2
+\end{array}
+\end{split}\]</div>
+<p>hasil akhirnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{array}{cc}
+(x_1+x_2+x_3)=(2,1/2,1/2)
+\end{array}
+\]</div>
+<p>jadi, sistem ini memiliki <em>solusi tunggal</em>.</p>
+</section>
+<section id="soal-3">
+<h2>Soal 3<a class="headerlink" href="#soal-3" title="Link to this heading">#</a></h2>
+<p>Selesaikan dengan menggunakan eliminasi Gauss.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+2x_1+2x_2&amp;=4\\
+x_1+x_2&amp;=2
+\end{array}
+\end{split}\]</div>
+<p>jawab:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+2 &amp; 2 &amp;  | &amp;4\\
+1 &amp; 1 &amp;  | &amp;2\\
+\end{bmatrix}
+\quad
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp;  | &amp;2\\
+1 &amp; 1 &amp;  | &amp;2\\
+\end{bmatrix}
+\quad
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_1+x_2=2\\
+x_1=2-x_2\\
+x_2=x_2
+\end{array}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\begin{array}{cc}
+(x_1,x_2)=(2-x_2,x_2)
+\end{array}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+jika(x_2=0),maka((x_1,x_2)=(2,0))\\
+jika(x_2=1),maka((x_1,x_2)=(1,1))\\
+jika(x_2=2),maka((x_1,x_2)=(0,2))
+\end{array}
+\end{split}\]</div>
+<p>maka sistem ini memiliki <em>tak hingga banyak solusi</em>.</p>
+</section>
+<section id="soal-4">
+<h2>Soal 4<a class="headerlink" href="#soal-4" title="Link to this heading">#</a></h2>
+<p>Selesaikan dengan menggunakan eliminasi Gauss.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{array}{cc}
 x_1+x_2&amp;=5\\
-x_1+2x_3&amp;=6\\
+x_1+2x_3&amp;=6
 \end{array}
-\)</span>$</p>
+\end{split}\]</div>
+<p>jawab:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp;| &amp;5\\
+0 &amp; 2 &amp;| &amp;6\\
+\end{bmatrix}
+\quad
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp;| &amp;5\\
+0 &amp; 1 &amp;| &amp;1\\
+\end{bmatrix}
+\quad
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_2=1\\
+x_1+1=5\\
+x_1=4
+\end{array}
+\end{split}\]</div>
+<p>jadi:</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{array}{cc}
+(x_1,x_2)=(4,1)
+\end{array}
+\]</div>
+<p>maka, sistem ini memiliki <em>solusi tunggal</em>.</p>
 </section>
 </section>
 
@@ -552,7 +715,11 @@ x_1+2x_3&amp;=6\\
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi Baris Elementer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eleminasi-gauss">Eleminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">Soal 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">Soal 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-3">Soal 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-4">Soal 4</a></li>
 </ul>
   </nav></div>
 
