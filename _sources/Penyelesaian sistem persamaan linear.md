@@ -25,6 +25,7 @@ $$
 ### Soal 1
 Selesaikan dengan menggunakan eliminasi Gauss
 
+
 $$
 \begin{array}{cc}
 x_1+2x_2+3x_3&=6\\
@@ -34,6 +35,7 @@ x_2+x_3&=2
 $$
 
 jawab:
+
 
 $$
 \begin{bmatrix}
