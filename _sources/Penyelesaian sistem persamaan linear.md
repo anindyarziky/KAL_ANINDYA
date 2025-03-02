@@ -11,7 +11,9 @@ title: Penyelesaian sistem persamaan linear
 Eliminasi gauss ini dapat dimanfaatkan untuk memecahkan sistem persamaan linear dengan merepresentasikan mengubah menjadi bentuk matriks, matriks tersebut lalu diubah kebentuk Eselon Baris melalui Operasi Baris Elementer. Kemudian sistem diselesaikan dengan substitusi balik.
 
 Contoh soal:
+
 Selesaikan dengan menggunakan Eliminasi Gauss.
+
 $$
 \begin{array}{cc}
 x_1+2x_2+3x_3z&=6\\
@@ -22,6 +24,7 @@ $$
 
 ### Soal 1
 Selesaikan dengan menggunakan eliminasi Gauss
+
 $$
 \begin{array}{cc}
 x_1+2x_2+3x_3&=6\\
@@ -29,7 +32,9 @@ x_1+2x_2+3x_3&=6\\
 x_2+x_3&=2
 \end{array}
 $$
+
 jawab:
+
 $$
 \begin{bmatrix}
 1 & 2 & 3 & | &6\\
@@ -55,18 +60,21 @@ $$
 \end{bmatrix}
 \quad
 $$
+
 $$
 \begin{array}{cc}
 x_2+x_3 = 2\\
 x_2 = 2 - x_3\\
 \end{array}
 $$
+
 $$
 \begin{array}{cc}
 x_1+2x_2+3x_3 = 6\\
 x_2 = 2 - x_3 \\
 \end{array}
 $$
+
 $$
 \begin{array}{cc}
 x_1 + 2(2-x_3)+3x_3 = 6\\
@@ -75,6 +83,7 @@ x_1+4+x_3\\
 x_1=2-x_3
 \end{array}
 $$
+
 $$
 \begin{array}{cc}
 x_1 = 2-x_3\\
@@ -82,6 +91,7 @@ x_2=2-x_3\\
 x_3=x_3
 \end{array}
 $$
+
 jadi hanya ada satu variabel maka sistem memiliki *tak hingga banyak solusi*.
 
 ### Soal 2
