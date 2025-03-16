@@ -188,6 +188,7 @@
 
 <li class="toctree-l1"><a class="reference internal" href="Penyelesaian%20sistem%20persamaan%20linear.html">PENYELESAIAN SISTEM PERSAMAAN LINEAR</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Matriks</a></li>
+
 </ul>
 
     </div>
@@ -383,6 +384,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmatika-matriks">Operasi Aritmatika Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-penjumlahan-dalam-matriks">Operasi Penjumlahan dalam Matriks</a></li>
@@ -390,6 +392,14 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-dalam-matriks">Operasi Perkalian dalam Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks-dengan-skalar">Perkalian Matriks dengan Skalar</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">SOAL</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian">Penyelesaian:</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -552,6 +562,167 @@ C = 3 \times A =
 \end{split}\]</div>
 </section>
 </section>
+<section id="soal">
+<h1>SOAL<a class="headerlink" href="#soal" title="Link to this heading">#</a></h1>
+<section id="selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">
+<h2>Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE<a class="headerlink" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe" title="Link to this heading">#</a></h2>
+<p>\begin{aligned}
+-7x_1 - 6x_2 - 12x_3 &amp;= -33 \
+5x_1 + 5x_2 + 7x_3 &amp;= 24 \
+x_1 + 4x_3 &amp;= 5
+\end{aligned}</p>
+</section>
+<section id="penyelesaian">
+<h2>Penyelesaian:<a class="headerlink" href="#penyelesaian" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Tuliskan dalam bentuk matriks</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+Ax = b
+\]</div>
+<p><span class="math notranslate nohighlight">\(
+A =
+\)</span></p>
+<p>\begin{bmatrix}
+-7 &amp; -6 &amp; -12 \
+5 &amp; 5 &amp; 7 \
+1 &amp; 0 &amp; 4
+\end{bmatrix}</p>
+<p><span class="math notranslate nohighlight">\(
+b =
+\)</span></p>
+<p>\begin{bmatrix}
+-33 \
+24 \
+5
+\end{bmatrix}</p>
+<ol class="arabic simple" start="2">
+<li><p>Menyusun matriks argumen, merubah bagian kiri menjadi matriks I sehingga bagian kanan berubah menjadi A invers.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+[A | I]
+\]</div>
+<p>\begin{bmatrix}
+-7 &amp; -6 &amp; -12 &amp; | 1 &amp; 0 &amp; 0 \
+5 &amp; 5 &amp; 7 &amp; | 0 &amp; 1 &amp; 0 \
+1 &amp; 0 &amp; 4 &amp; | 0 &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ol class="arabic simple" start="3">
+<li><p>Bagi baris pertama dengan -7, agar elemen (1,1) menjadi 1</p></li>
+</ol>
+<p>\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
+5 &amp; 5 &amp; 7 &amp; \big| &amp; 0 &amp; 1 &amp; 0 \
+1 &amp; 0 &amp; 4 &amp; \big| &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ol class="arabic simple" start="4">
+<li><p>Nol kan elemen di bawahnya menggunakan operasi:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+R_2 \leftarrow R_2 - 5R_1
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+R_3 \leftarrow R_3 - R_1
+\]</div>
+<p>\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
+0 &amp; \frac{5}{7} &amp; -\frac{13}{7} &amp; \big| &amp; \frac{5}{7} &amp; 1 &amp; 0 \
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ol class="arabic simple" start="5">
+<li><p>Ubah elemen (2,2) menjadi 1, dengan cara baris kedua di bagi 5/7</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+R_2 \leftarrow R_2 \times \frac{7}{5}
+\]</div>
+<p>\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
+0 &amp; 1 &amp; -\frac{13}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ol class="arabic simple" start="6">
+<li><p>Nol kan elemen di atas dan bawah (2,2) menggunakan operasi:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+R_1 \leftarrow R_1 - \frac{6}{7} R_2
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+R_3 \leftarrow R_3 - \frac{6}{7} R_2
+\]</div>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; \frac{102}{35} &amp; -\frac{13}{35} &amp; \big| &amp; -\frac{6}{5} &amp; 0 \
+0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
+0 &amp; 0 &amp; \frac{26}{35} &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ol class="arabic simple" start="7">
+<li><p>Ubah elemen (3,3) menjadi 1, dengan cara baris ketiga dibagi dengan 26/35</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+R_3 \leftarrow R_3 \times \frac{35}{26}
+\]</div>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; \frac{102}{35} &amp; -\frac{13}{35} &amp; \big| &amp; -\frac{6}{5} &amp; 0 \
+0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
+0 &amp; 0 &amp; 1 &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; \frac{35}{26} &amp; 1
+\end{bmatrix}</p>
+<ol class="arabic simple" start="8">
+<li><p>Nol kan elemen diatas (3,3)</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+R_1 \leftarrow R_1 - \frac{102}{35} R_3
+\]</div>
+<p>diperoleh inversnya yaitu:</p>
+<p><span class="math notranslate nohighlight">\(
+A^{-1} =
+\)</span></p>
+<p>\begin{bmatrix}
+\frac{26}{35} &amp; \frac{102}{65} &amp; \frac{102}{91} \
+-\frac{7}{5} &amp; \frac{13}{5} &amp; -\frac{35}{26} \
+-\frac{13}{26} &amp; -\frac{42}{26} &amp; \frac{35}{26}
+\end{bmatrix}</p>
+<ol class="arabic simple" start="9">
+<li><p>Kalikan A invers dengan b</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+x = A^{-1} b
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{equation*}
+\begin{bmatrix}
+x_1\\
+x_2\\
+x_3
+\end{bmatrix}=
+\begin{bmatrix}
+\frac{26}{35} &amp; \frac{102}{65} &amp; \frac{102}{91} \\
+-\frac{7}{5} &amp; \frac{13}{5} &amp; -\frac{35}{26} \\
+-\frac{13}{26} &amp; -\frac{42}{26} &amp; \frac{35}{26}
+\end{bmatrix}
+\begin{bmatrix}
+-33\\
+24\\
+5
+\end{bmatrix}
+\end{equation*}
+\end{split}\]</div>
+<p>Hasil akhirnya adalah</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 = -1, \quad x_2 = 4, \quad x_3 = 2
+\]</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -608,6 +779,7 @@ C = 3 \times A =
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmatika-matriks">Operasi Aritmatika Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-penjumlahan-dalam-matriks">Operasi Penjumlahan dalam Matriks</a></li>
@@ -615,6 +787,14 @@ C = 3 \times A =
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-dalam-matriks">Operasi Perkalian dalam Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks-dengan-skalar">Perkalian Matriks dengan Skalar</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">SOAL</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian">Penyelesaian:</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
