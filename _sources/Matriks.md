@@ -170,11 +170,13 @@ $
 A =
 $
 
+$$
 \begin{bmatrix}
     -7 & -6 & -12 \\
     5 & 5 & 7 \\
     1 & 0 & 4
 \end{bmatrix}
+$$
 
 $
 b =
@@ -192,11 +194,13 @@ $$
 [A | I] 
 $$
 
+$$
 \begin{bmatrix}
     -7 & -6 & -12 & | 1 & 0 & 0 \\
     5 & 5 & 7 & | 0 & 1 & 0 \\
     1 & 0 & 4 & | 0 & 0 & 1
 \end{bmatrix}
+$$
 
 3.  Bagi baris pertama dengan -7, agar elemen (1,1) menjadi 1
 
