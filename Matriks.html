@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Matriks &#8212; KAL</title>
+    <title>MATRIKS &#8212; KAL</title>
   
   
   
@@ -187,8 +187,7 @@
 
 
 <li class="toctree-l1"><a class="reference internal" href="Penyelesaian%20sistem%20persamaan%20linear.html">PENYELESAIAN SISTEM PERSAMAAN LINEAR</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Matriks</a></li>
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">MATRIKS</a></li>
 </ul>
 
     </div>
@@ -290,7 +289,7 @@
       
       
       
-      <li><a href="_sources/Matriks.md" target="_blank"
+      <li><a href="_sources/Matriks.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -300,7 +299,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -374,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Matriks</h1>
+    <h1>MATRIKS</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -384,22 +383,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmatika-matriks">Operasi Aritmatika Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-penjumlahan-dalam-matriks">Operasi Penjumlahan dalam Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pengurangan-dalam-matriks">Operasi Pengurangan dalam Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-dalam-matriks">Operasi Perkalian dalam Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks-dengan-skalar">Perkalian Matriks dengan Skalar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">DEFINISI MATRIKS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmatika-matriks">OPERASI ARITMATIKA MATRIKS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">1. Penjumlahan Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matriks">2. Pengurangan Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">3. Perkalian Matriks</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">SOAL</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian">Penyelesaian:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-invers-nya-di-cari-dengan-operasi-elementer">selesaikan dengan menggunakan invers, invers nya di cari dengan operasi elementer.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">SOAL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks">Determinan matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-matriks">Minor Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">Kofaktor Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hubungan-matriks-minor-kofaktor">Hubungan Matriks Minor &amp; Kofaktor</a></li>
 </ul>
 </li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-dengan-konsep-minor-dan-kofactor-matriks-contoh-matriks-3x3-4x4-dan-5x5">Mencari Determinan Dengan Konsep Minor dan Kofactor Matriks. Contoh Matriks 3x3 4x4 dan 5x5</a></li>
+</ul>
             </nav>
         </div>
     </div>
@@ -410,173 +415,348 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="matriks">
-<h1>Matriks<a class="headerlink" href="#matriks" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="matriks">
+<h1>MATRIKS<a class="headerlink" href="#matriks" title="Link to this heading">#</a></h1>
 <section id="definisi-matriks">
-<h2>Definisi Matriks<a class="headerlink" href="#definisi-matriks" title="Link to this heading">#</a></h2>
-<p>Matriks adalah susunan bilangan atau objek matematika lainnya yang diatur dalam baris dan kolom. Dalam materi matriks terdapat istilah baris dan kolom yang membentuk persegi atau persegi panjang.</p>
-<p>Contoh bentuk matriks 3 kali 3:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-1 &amp; 2 &amp; 3 \\
-2 &amp; 4 &amp; 6 \\
-0 &amp; 1 &amp; 1 \\
-\end{bmatrix}
-\quad
-\end{split}\]</div>
+<h2>DEFINISI MATRIKS<a class="headerlink" href="#definisi-matriks" title="Link to this heading">#</a></h2>
+<p>Matriks adalah kumpulan bilangan-bilangan yang disusun secara khusus
+dalam bentuk baris dan kolom sehingga membentuk persegi panjang dan bujur
+sangkar dimana panjang dan lebarnya ditunjukkan oleh kolom dan baris yang
+ditulis diantara dua tanda kurung, yaitu ( ) dan [ ].</p>
 </section>
 <section id="operasi-aritmatika-matriks">
-<h2>Operasi Aritmatika Matriks<a class="headerlink" href="#operasi-aritmatika-matriks" title="Link to this heading">#</a></h2>
-</section>
-<section id="operasi-penjumlahan-dalam-matriks">
-<h2>Operasi Penjumlahan dalam Matriks<a class="headerlink" href="#operasi-penjumlahan-dalam-matriks" title="Link to this heading">#</a></h2>
-<p>Penjumlahan Operasi Aritmatika pada matriks memiliki syarat-syarat yang harus dipenuhi agar dapat menjumlahkan dua buah matriks. Caranya dapat dilakukan penambahan lebih dari satu suku matriks jika memiliki ukuran yang sama.</p>
-<p>contoh:
+<h2>OPERASI ARITMATIKA MATRIKS<a class="headerlink" href="#operasi-aritmatika-matriks" title="Link to this heading">#</a></h2>
+<p>Merupakan operasi aljabar yang dilakukan pada matriks, seperti penjumlahan, pengurangan, dan perkalian. Operasi ini merupakan bagian dasar dari aljabar linear.</p>
+<section id="penjumlahan-matriks">
+<h3>1. Penjumlahan Matriks<a class="headerlink" href="#penjumlahan-matriks" title="Link to this heading">#</a></h3>
+<p>Dua matriks bisa dijumlahkan jika memiliki ukuran (ordo) yang sama. Elemen-elemen pada posisi yang sama dijumlahkan.</p>
+<p>Contoh:
+A =
 $<span class="math notranslate nohighlight">\(
-A =
 \begin{bmatrix}
-1 &amp; 2 \\
-3 &amp; 4
+&amp; 1 &amp; 2 &amp;  \\
+&amp; 3 &amp; 4 &amp; \\
 \end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+B =
+\)</span><span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 5 &amp; 6 &amp;  \\
+&amp; 7 &amp; 8 &amp; \\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+A - B =
+\)</span><span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1+5 &amp; 2+6 \\
+&amp; 3+7 &amp; 4+8\\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+jadi hasilnya
+\)</span><span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 6 &amp; 8 &amp;  \\
+&amp; 10 &amp; 12 &amp; \\
+\end{bmatrix}
+\quad
 \)</span>$</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-B =
-\begin{bmatrix}
-5 &amp; 6 \\
-7 &amp; 8
-\end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-C = A + B =
-\begin{bmatrix}
-1+5 &amp; 2+6 \\
-3+7 &amp; 4+8
-\end{bmatrix}
-=
-\begin{bmatrix}
-6 &amp; 8 \\
-10 &amp; 12
-\end{bmatrix}
-\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matriks penjumlahan</span>
+<span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen [</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">][</span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">]: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+
+<span class="k">def</span> <span class="nf">tambah_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[[</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks A:&quot;</span><span class="p">)</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks B:&quot;</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
+
+<span class="n">hasil</span> <span class="o">=</span> <span class="n">tambah_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil penjumlahan matriks:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="n">hasil</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Masukkan elemen untuk matriks A:
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="k">return</span> <span class="p">[[</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks A:&quot;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks B:&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="n">B</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
+
+<span class="nn">Cell In[1], line 3,</span> in <span class="ni">input_matriks</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
+<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen [</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">][</span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">]: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/ipykernel/kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1279</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1280</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1281</span>     <span class="k">raise</span> <span class="n">StdinNotImplementedError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1282</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_input_request</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1283</span>     <span class="nb">str</span><span class="p">(</span><span class="n">prompt</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1284</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_parent_ident</span><span class="p">[</span><span class="s2">&quot;shell&quot;</span><span class="p">],</span>
+<span class="g g-Whitespace">   </span><span class="mi">1285</span>     <span class="bp">self</span><span class="o">.</span><span class="n">get_parent</span><span class="p">(</span><span class="s2">&quot;shell&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1286</span>     <span class="n">password</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1287</span> <span class="p">)</span>
+
+<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="operasi-pengurangan-dalam-matriks">
-<h2>Operasi Pengurangan dalam Matriks<a class="headerlink" href="#operasi-pengurangan-dalam-matriks" title="Link to this heading">#</a></h2>
-<p>Sama dengan operasi penjumlahan, operasi pengurangan dalam matriks juga harus memiliki ukuran yang sama agar dapat bisa di kurangkan.
-contoh:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-A =
-\begin{bmatrix}
-7 &amp; 8 \\
-9 &amp; 10
-\end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-B =
-\begin{bmatrix}
-3 &amp; 5 \\
-2 &amp; 1
-\end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-C = A - B =
-\begin{bmatrix}
-7 - 3 &amp; 8 - 2 \\
-9 - 5 &amp; 10 - 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-4 &amp; 6 \\
-4 &amp; 9
-\end{bmatrix}
-\end{split}\]</div>
-</section>
-<section id="operasi-perkalian-dalam-matriks">
-<h2>Operasi Perkalian dalam Matriks<a class="headerlink" href="#operasi-perkalian-dalam-matriks" title="Link to this heading">#</a></h2>
-<p>Perkalian matriks adalah operasi aritmatika yang dilakukan antara dua matriks untuk menghasilkan matriks baru. Tidak seperti penjumlahan atau pengurangan, perkalian matriks memiliki aturan khusus.Dua matriks dapat dikalian jika jumlah kolom matriks pertama harus sama dengan jumlah baris matriks kedua.</p>
+<section id="pengurangan-matriks">
+<h3>2. Pengurangan Matriks<a class="headerlink" href="#pengurangan-matriks" title="Link to this heading">#</a></h3>
+<p>Syarat pengurangan matriks sama dengan penjumlahan, yaitu kedua matriks harus memiliki ordo yang sama sehingga bisa dioperasikan.</p>
 <p>contoh:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-A =
+<p>A =
+$<span class="math notranslate nohighlight">\(
 \begin{bmatrix}
-1 &amp; 2 \\
-3 &amp; 4
+&amp; 2 &amp; 4 &amp;  \\
+&amp; 3 &amp; 1 &amp; \\
 \end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
 B =
+\)</span><span class="math notranslate nohighlight">\(
 \begin{bmatrix}
-5 &amp; 6 \\
-7 &amp; 8
+&amp; 5 &amp; 7 &amp;  \\
+&amp; 6 &amp; 2 &amp; \\
 \end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-C = A \times B =
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+A - B =
+\)</span><span class="math notranslate nohighlight">\(
 \begin{bmatrix}
-(1 \times 5 + 2 \times 7) &amp; (1 \times 6 + 2 \times 8) \\
-(3 \times 5 + 4 \times 7) &amp; (3 \times 6 + 4 \times 8)
+&amp; 2-5 &amp; 4-7 \\
+&amp; 3-6 &amp; 1-2 \\
 \end{bmatrix}
-=
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+jadi hasilnya
+\)</span><span class="math notranslate nohighlight">\(
 \begin{bmatrix}
-(5 + 14) &amp; (6 + 16) \\
-(15 + 28) &amp; (18 + 32)
+&amp; -3 &amp; -3 &amp;  \\
+&amp; -3 &amp; -1 &amp; \\
 \end{bmatrix}
-=
-\begin{bmatrix}
-19 &amp; 22 \\
-43 &amp; 50
-\end{bmatrix}
-\end{split}\]</div>
+\quad
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pengurangan Matriks</span>
+<span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen [</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">][</span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">]: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+
+<span class="k">def</span> <span class="nf">pengurangan_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[[</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks A:&quot;</span><span class="p">)</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks B:&quot;</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
+
+<span class="n">hasil</span> <span class="o">=</span> <span class="n">pengurangan_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil pengurangan matriks:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="n">hasil</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Masukkan elemen untuk matriks A:
+Masukkan elemen [1][1]: 2
+Masukkan elemen [1][2]: 4
+Masukkan elemen [2][1]: 3
+Masukkan elemen [2][2]: 1
+Masukkan elemen untuk matriks B:
+Masukkan elemen [1][1]: 5
+Masukkan elemen [1][2]: 7
+Masukkan elemen [2][1]: 6
+Masukkan elemen [2][2]: 2
+Hasil pengurangan matriks:
+[-3, -3]
+[-3, -1]
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="perkalian-matriks-dengan-skalar">
-<h2>Perkalian Matriks dengan Skalar<a class="headerlink" href="#perkalian-matriks-dengan-skalar" title="Link to this heading">#</a></h2>
-<p>Operasi skalar pada matriks dilakukan dengan cara mengalikan semua elemen matriks dengan skalar tersebut.</p>
+<section id="perkalian-matriks">
+<h3>3. Perkalian Matriks<a class="headerlink" href="#perkalian-matriks" title="Link to this heading">#</a></h3>
+<p>Operasi perkalian matriks adalah operasi biner yang menghasilkan matriks baru dari dua matriks yang dikalikan. Perkalian matriks memiliki beberapa jenis, yaitu perkalian skalar dan perkalian dua matriks atau lebih.</p>
 <p>contoh:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-A =
+<ul class="simple">
+<li><p>Perkalian dua matriks atau lebih</p></li>
+</ul>
+<p>contoh perkalian matriks dibawah menggunakan ordo 2x2 yang memiliki 2 baris dan 2 kolom.</p>
+<p>A =
+$<span class="math notranslate nohighlight">\(
 \begin{bmatrix}
-1 &amp; 2 \\
-3 &amp; 4
+&amp; 1 &amp; 5 &amp;  \\
+&amp; 6 &amp; 2 &amp; \\
 \end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-C = 3 \times A =
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+B =
+\)</span><span class="math notranslate nohighlight">\(
 \begin{bmatrix}
-3 \times 1 &amp; 3 \times 2 \\
-3 \times 3 &amp; 3 \times 4
+&amp; 9 &amp; 2 &amp;  \\
+&amp; 7 &amp; 8 &amp; \\
 \end{bmatrix}
-=
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+A x B =
+\)</span><span class="math notranslate nohighlight">\(
 \begin{bmatrix}
-3 &amp; 6 \\
-9 &amp; 12
+&amp; (1×9 + 5×7) &amp; (1×2 + 2×8) \\
+&amp; (6×9 + 2×7) &amp; (6×2 + 2×8)  \\
 \end{bmatrix}
-\end{split}\]</div>
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+jadi hasilnya
+\)</span><span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 44 &amp; 42 &amp;  \\
+&amp; 68 &amp; 28 &amp; \\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Perkalian Matriks (perkalian dua matriks atau lebih)</span>
+<span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen baris </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">, kolom </span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+
+<span class="k">def</span> <span class="nf">kali_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[[</span><span class="nb">sum</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk Matriks A:&quot;</span><span class="p">)</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk Matriks B:&quot;</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
+
+<span class="n">hasil</span> <span class="o">=</span> <span class="n">kali_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil perkalian matriks:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="n">hasil</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Masukkan elemen untuk Matriks A:
+Masukkan elemen baris 1, kolom 1: 1
+Masukkan elemen baris 1, kolom 2: 5
+Masukkan elemen baris 2, kolom 1: 6
+Masukkan elemen baris 2, kolom 2: 2
+Masukkan elemen untuk Matriks B:
+Masukkan elemen baris 1, kolom 1: 9
+Masukkan elemen baris 1, kolom 2: 2
+Masukkan elemen baris 2, kolom 1: 7
+Masukkan elemen baris 2, kolom 2: 8
+Hasil perkalian matriks:
+[44, 42]
+[68, 28]
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Perkalian Skalar Matriks</p></li>
+</ul>
+<p>Perkalian ini dilakukan dengan mengalikan setiap elemen dalam matriks dengan sebuah bilangan skalar.</p>
+<p>contoh:
+jika A =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 4 &amp; 7 &amp;  \\
+&amp; 5 &amp; 8 &amp; \\
+\end{bmatrix}
+\quad
+\)</span>$
+dan skalar  k = 3, maka:</p>
+<p>kA = 3 x $<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 4 &amp; 7 &amp;  \\
+&amp; 5 &amp; 8 &amp; \\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+jadi hasilnya
+\)</span><span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 12 &amp; 21 &amp;  \\
+&amp; 15 &amp; 24 &amp; \\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># perkalian skalar matriks</span>
+<span class="k">def</span> <span class="nf">kali_skalar_matriks</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">A</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[[</span><span class="n">k</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">))]</span>
+
+<span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen baris </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">, kolom </span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan skalar: &quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk Matriks A:&quot;</span><span class="p">)</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
+
+<span class="n">hasil</span> <span class="o">=</span> <span class="n">kali_skalar_matriks</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil perkalian skalar dengan matriks:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="n">hasil</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Masukkan skalar: 3
+Masukkan elemen untuk Matriks A:
+Masukkan elemen baris 1, kolom 1: 4
+Masukkan elemen baris 1, kolom 2: 7
+Masukkan elemen baris 2, kolom 1: 5
+Masukkan elemen baris 2, kolom 2: 8
+Hasil perkalian skalar dengan matriks:
+[12, 21]
+[15, 24]
+</pre></div>
+</div>
+</div>
+</div>
 </section>
+</section>
+<section id="selesaikan-dengan-menggunakan-invers-invers-nya-di-cari-dengan-operasi-elementer">
+<h2>selesaikan dengan menggunakan invers, invers nya di cari dengan operasi elementer.<a class="headerlink" href="#selesaikan-dengan-menggunakan-invers-invers-nya-di-cari-dengan-operasi-elementer" title="Link to this heading">#</a></h2>
 </section>
 <section id="soal">
-<h1>SOAL<a class="headerlink" href="#soal" title="Link to this heading">#</a></h1>
+<h2>SOAL<a class="headerlink" href="#soal" title="Link to this heading">#</a></h2>
 <section id="selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">
-<h2>Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE<a class="headerlink" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe" title="Link to this heading">#</a></h2>
+<h3>Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE<a class="headerlink" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe" title="Link to this heading">#</a></h3>
 <p>\begin{aligned}
 -7x_1 - 6x_2 - 12x_3 &amp;= -33 \
 5x_1 + 5x_2 + 7x_3 &amp;= 24 \
 x_1 + 4x_3 &amp;= 5
 \end{aligned}</p>
-</section>
-<section id="penyelesaian">
-<h2>Penyelesaian:<a class="headerlink" href="#penyelesaian" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
+<ul class="simple">
 <li><p>Tuliskan dalam bentuk matriks</p></li>
-</ol>
+</ul>
 <div class="math notranslate nohighlight">
 \[
 Ax = b
@@ -584,14 +764,11 @@ Ax = b
 <p><span class="math notranslate nohighlight">\(
 A =
 \)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-    -7 &amp; -6 &amp; -12 \\
-    5 &amp; 5 &amp; 7 \\
-    1 &amp; 0 &amp; 4
-\end{bmatrix}
-\end{split}\]</div>
+<p>\begin{bmatrix}
+-7 &amp; -6 &amp; -12 \
+5 &amp; 5 &amp; 7 \
+1 &amp; 0 &amp; 4
+\end{bmatrix}</p>
 <p><span class="math notranslate nohighlight">\(
 b =
 \)</span></p>
@@ -600,32 +777,29 @@ b =
 24 \
 5
 \end{bmatrix}</p>
-<ol class="arabic simple" start="2">
+<ul class="simple">
 <li><p>Menyusun matriks argumen, merubah bagian kiri menjadi matriks I sehingga bagian kanan berubah menjadi A invers.</p></li>
-</ol>
+</ul>
 <div class="math notranslate nohighlight">
 \[
-[A | I] 
+[A | I]
 \]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{bmatrix}
-    -7 &amp; -6 &amp; -12 &amp; | 1 &amp; 0 &amp; 0 \\
-    5 &amp; 5 &amp; 7 &amp; | 0 &amp; 1 &amp; 0 \\
-    1 &amp; 0 &amp; 4 &amp; | 0 &amp; 0 &amp; 1
-\end{bmatrix}
-\end{split}\]</div>
-<ol class="arabic simple" start="3">
+<p>\begin{bmatrix}
+-7 &amp; -6 &amp; -12 &amp; | 1 &amp; 0 &amp; 0 \
+5 &amp; 5 &amp; 7 &amp; | 0 &amp; 1 &amp; 0 \
+1 &amp; 0 &amp; 4 &amp; | 0 &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ul class="simple">
 <li><p>Bagi baris pertama dengan -7, agar elemen (1,1) menjadi 1</p></li>
-</ol>
+</ul>
 <p>\begin{bmatrix}
 1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
 5 &amp; 5 &amp; 7 &amp; \big| &amp; 0 &amp; 1 &amp; 0 \
 1 &amp; 0 &amp; 4 &amp; \big| &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix}</p>
-<ol class="arabic simple" start="4">
+<ul class="simple">
 <li><p>Nol kan elemen di bawahnya menggunakan operasi:</p></li>
-</ol>
+</ul>
 <div class="math notranslate nohighlight">
 \[
 R_2 \leftarrow R_2 - 5R_1
@@ -639,9 +813,9 @@ R_3 \leftarrow R_3 - R_1
 0 &amp; \frac{5}{7} &amp; -\frac{13}{7} &amp; \big| &amp; \frac{5}{7} &amp; 1 &amp; 0 \
 0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
 \end{bmatrix}</p>
-<ol class="arabic simple" start="5">
+<ul class="simple">
 <li><p>Ubah elemen (2,2) menjadi 1, dengan cara baris kedua di bagi 5/7</p></li>
-</ol>
+</ul>
 <div class="math notranslate nohighlight">
 \[
 R_2 \leftarrow R_2 \times \frac{7}{5}
@@ -651,9 +825,9 @@ R_2 \leftarrow R_2 \times \frac{7}{5}
 0 &amp; 1 &amp; -\frac{13}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
 0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
 \end{bmatrix}</p>
-<ol class="arabic simple" start="6">
+<ul class="simple">
 <li><p>Nol kan elemen di atas dan bawah (2,2) menggunakan operasi:</p></li>
-</ol>
+</ul>
 <div class="math notranslate nohighlight">
 \[
 R_1 \leftarrow R_1 - \frac{6}{7} R_2
@@ -667,9 +841,9 @@ R_3 \leftarrow R_3 - \frac{6}{7} R_2
 0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
 0 &amp; 0 &amp; \frac{26}{35} &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; 0 &amp; 1
 \end{bmatrix}</p>
-<ol class="arabic simple" start="7">
+<ul class="simple">
 <li><p>Ubah elemen (3,3) menjadi 1, dengan cara baris ketiga dibagi dengan 26/35</p></li>
-</ol>
+</ul>
 <div class="math notranslate nohighlight">
 \[
 R_3 \leftarrow R_3 \times \frac{35}{26}
@@ -679,9 +853,9 @@ R_3 \leftarrow R_3 \times \frac{35}{26}
 0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
 0 &amp; 0 &amp; 1 &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; \frac{35}{26} &amp; 1
 \end{bmatrix}</p>
-<ol class="arabic simple" start="8">
+<ul class="simple">
 <li><p>Nol kan elemen diatas (3,3)</p></li>
-</ol>
+</ul>
 <div class="math notranslate nohighlight">
 \[
 R_1 \leftarrow R_1 - \frac{102}{35} R_3
@@ -727,6 +901,354 @@ x_3
 \[
 x_1 = -1, \quad x_2 = 4, \quad x_3 = 2
 \]</div>
+</section>
+</section>
+<section id="determinan-matriks">
+<h2>Determinan matriks<a class="headerlink" href="#determinan-matriks" title="Link to this heading">#</a></h2>
+<p>Merupakan suatu nilai skalar yang dapat dihitung dari elemen-elemen suatu matriks persegi yang biasanya matriks dengan jumlah baris dan kolom yang sama.
+digunakan untuk mementukan apakah suatu matriks memiliki invers (det (A)=/ 0).</p>
+<ul class="simple">
+<li><p>sifat sifat penting determinan</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Determinan Matriks identitas:
+det(I)=1, dimana I adalah matriks identitas</p></li>
+<li><p>Baris atau kolom nol:
+Jika ada baris atau kolom yang semuanya nol, maka det(A)=0</p></li>
+<li><p>pertukaran baris/kolom;
+Jika dua baris atau kolom dipertukarkan, determinan berubah tanda</p></li>
+<li><p>Kelipatan baris/kolom:
+Jika satu baris atau kolom dikalikan dengan skalar k, maka determinan menjadi k det (A)</p></li>
+<li><p>matriks singular:
+Jika det(A)=0, maka matriks A disebut singular(Tidak memiliki invers) jika non singular maka matriks nya buka 0, tapi -1 memiliki invers (sebalik nya dari matriks singular)</p></li>
+</ol>
+<ul class="simple">
+<li><p>contoh matriks 2x2:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; a &amp; b &amp;  \\
+&amp; c &amp; d &amp; \\
+\end{bmatrix}
+\quad
+\)</span>$</p></li>
+</ul>
+<p>maka determinannya adalah:
+det(A) = ad−bc</p>
+<ul class="simple">
+<li><p>contoh matriks 3x3:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; a &amp; b &amp; c &amp; \\
+&amp; d &amp; e &amp; f &amp; \\
+&amp; g &amp; h &amp; i &amp; \\
+\end{bmatrix}
+\quad
+\)</span>$</p></li>
+</ul>
+<p>maka determinannya adalah:
+det(A) = a(ei−fh)−b(di−fg)+c(dh−eg)</p>
+<section id="minor-matriks">
+<h3>Minor Matriks<a class="headerlink" href="#minor-matriks" title="Link to this heading">#</a></h3>
+<p>Merupakan bagian matriks yang tersisa setelah menghilangkan baris dan kolom yang berisi elemen tertentu.</p>
+<ul class="simple">
+<li><p>contoh matriks 3x3:</p></li>
+</ul>
+<p>A =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 4 &amp; 5 &amp; 6 &amp;\\
+&amp; 7 &amp; 8 &amp; 9 &amp;\\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+Minor untuk elemen A \)</span>M_{23}$ = 6</p>
+<p><span class="math notranslate nohighlight">\(M_{23}\)</span>:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp;  \\
+&amp; 7 &amp; 8 &amp; \\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+\)</span>M_{23}$ ​= (1×8)−(2×7) = 8−14 = −6</p>
+</section>
+<section id="kofaktor-matriks">
+<h3>Kofaktor Matriks<a class="headerlink" href="#kofaktor-matriks" title="Link to this heading">#</a></h3>
+<p>Merupakan kofaktor dari suatu elemen dalam matriks adalah minor dari elemen tersebut yang dikalikan dengan faktor tanda berdasarkan posisinya dalam matriks.</p>
+<ul class="simple">
+<li><p>Rumus Kofaktor
+$<span class="math notranslate nohighlight">\(
+C_{ij} = (-1)^{i+j} M_{ij}
+\)</span>$</p></li>
+<li><p>contoh matriks 3x3:</p></li>
+<li><p>menentukan minor</p></li>
+</ul>
+<p>A =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 4 &amp; 5 &amp; 6 &amp;\\
+&amp; 7 &amp; 8 &amp; 9 &amp;\\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+Minor untuk elemen \)</span>A_{23}$ = 6</p>
+<p><span class="math notranslate nohighlight">\(
+M_{23}:
+\)</span>
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp;  \\
+&amp; 7 &amp; 8 &amp; \\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+\)</span>M_{23}$ ​= (1×8)−(2×7) = 8−14 = −6</p>
+<ul class="simple">
+<li><p>lalu masukkan rumus kofaktor
+$<span class="math notranslate nohighlight">\(
+C_{ij} = (-1)^{i+j} M_{ij}
+\)</span>$</p></li>
+<li><p>masukkan angka
+$<span class="math notranslate nohighlight">\(
+C_{23} = (-1)^{2+3} (-6)
+\)</span>$</p></li>
+<li><p>Karena 2+3 = 5, maka <span class="math notranslate nohighlight">\((−1)^{5}\)</span> = −1, sehingga:
+$<span class="math notranslate nohighlight">\(
+C_{23} = (-1) × (-6) = 6
+\)</span>$</p></li>
+</ul>
+<section id="hubungan-matriks-minor-kofaktor">
+<h4>Hubungan Matriks Minor &amp; Kofaktor<a class="headerlink" href="#hubungan-matriks-minor-kofaktor" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Minor <span class="math notranslate nohighlight">\((M_{ij})\)</span> adalah determinan dari submatriks yang diperoleh dengan menghapus baris ke-i dan kolom ke-j.</p></li>
+<li><p>Kofaktor <span class="math notranslate nohighlight">\((C_{ij})\)</span> adalah minor yang dikalikan dengan faktor tanda <span class="math notranslate nohighlight">\((−1)^{i+j}\)</span> dan digunakan dalam perhitungan determinan, invers matriks, serta ekspansi kofaktor.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="mencari-determinan-dengan-konsep-minor-dan-kofactor-matriks-contoh-matriks-3x3-4x4-dan-5x5">
+<h2>Mencari Determinan Dengan Konsep Minor dan Kofactor Matriks. Contoh Matriks 3x3 4x4 dan 5x5<a class="headerlink" href="#mencari-determinan-dengan-konsep-minor-dan-kofactor-matriks-contoh-matriks-3x3-4x4-dan-5x5" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>contoh matriks 3x3 dengan konsep minor dan kofaktor sudah ada diatas.</p></li>
+<li><p>contoh matriks 4x4:</p></li>
+</ol>
+<p>A =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 3 &amp; 1 &amp; 5 &amp;\\
+&amp; 4 &amp; 6 &amp; 2 &amp; 8 &amp;\\
+&amp; 3 &amp; 1 &amp; 7 &amp; 4 &amp;\\
+&amp; 9 &amp; 2 &amp; 6 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{11}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{11}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 6 &amp; 2 &amp; 8 &amp;\\
+&amp; 1 &amp; 7 &amp; 4 &amp;\\
+&amp; 2 &amp; 6 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\det(M_{11}) = 6
+\begin{vmatrix}
+7 &amp; 4 \\
+6 &amp; 3
+\end{vmatrix}
+- 2
+\begin{vmatrix}
+1 &amp; 4 \\
+2 &amp; 3
+\end{vmatrix}
++ 8
+\begin{vmatrix}
+1 &amp; 7 \\
+2 &amp; 6
+\end{vmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\displaystyle
+\begin{aligned}
+&amp;= 6(7 \times 3 - 4 \times 6) - 2(1 \times 3 - 4 \times 2) + 8(1 \times 6 - 7 \times 2) \\
+&amp;= 6(21 - 24) - 2(3 - 8) + 8(6 - 14) \\
+&amp;= 6(-3) - 2(-5) + 8(-8) \\
+&amp;= -18 + 10 - 64 = -72
+\end{aligned}
+\end{split}\]</div>
+<p>dengan hasil:</p>
+<p><span class="math notranslate nohighlight">\(C_{11}\)</span> ​= <span class="math notranslate nohighlight">\((−1)^{1+1}\)</span><span class="math notranslate nohighlight">\(M_{11}\)</span> ​=  1(−72) = −72</p>
+<ul class="simple">
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{12}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{12}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 4 &amp; 2 &amp; 8 &amp;\\
+&amp; 3 &amp; 7 &amp; 4 &amp;\\
+&amp; 9 &amp; 6 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{12}\)</span>=24</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{12}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+2}\)</span><span class="math notranslate nohighlight">\(M_{12}\)</span> ​= (-1)(24)=-24</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{13}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{13}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 4 &amp; 6 &amp; 8 &amp;\\
+&amp; 3 &amp; 1 &amp; 4 &amp;\\
+&amp; 9 &amp; 2 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{13}\)</span>=15</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{13}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+3}\)</span><span class="math notranslate nohighlight">\(M_{13}\)</span> ​= (1)(15)=15</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{14}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{14}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 4 &amp; 6 &amp; 2 &amp;\\
+&amp; 3 &amp; 1 &amp; 7 &amp;\\
+&amp; 9 &amp; 2 &amp; 6 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{14}\)</span>= -30</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{14}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+4}\)</span><span class="math notranslate nohighlight">\(M_{14}\)</span> ​= (1)(-30)=−30</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\displaystyle
+\begin{aligned}
+detA
+&amp;= 2(-72) + 3(-24) + 1(15) + 5(-30) \\
+&amp;= -144 - 72 + 15 - 150 \\
+&amp;= -351
+\end{aligned}
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li><p>matriks 5x5:</p></li>
+</ol>
+<p>A =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp;\\
+&amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 1 &amp;\\
+&amp; 3 &amp; 4 &amp; 5 &amp; 1 &amp; 2 &amp;\\
+&amp; 4 &amp; 5 &amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 5 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{11}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{11}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 3 &amp; 4 &amp; 5 &amp; 1 &amp;\\
+&amp; 4 &amp; 5 &amp; 1 &amp; 2 &amp;\\
+&amp; 5 &amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{11}\)</span>=-24</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{11}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+1}\)</span><span class="math notranslate nohighlight">\(M_{11}\)</span> ​= 1(-24)=-24</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{12}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{12}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 4 &amp; 5 &amp; 1 &amp;\\
+&amp; 3 &amp; 5 &amp; 1 &amp; 2 &amp;\\
+&amp; 4 &amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 5 &amp; 2 &amp; 3 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{12}\)</span>=18</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{12}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+2}\)</span><span class="math notranslate nohighlight">\(M_{12}\)</span> ​= (-1)(18)=-18</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{13}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{13}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 3 &amp; 5 &amp; 1 &amp;\\
+&amp; 3 &amp; 4 &amp; 1 &amp; 2 &amp;\\
+&amp; 4 &amp; 5 &amp; 2 &amp; 3 &amp;\\
+&amp; 5 &amp; 1 &amp; 3 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{13}\)</span>=12</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{13}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+3}\)</span><span class="math notranslate nohighlight">\(M_{13}\)</span> ​= (1)(12)=12</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{14}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{14}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 3 &amp; 4 &amp; 1 &amp;\\
+&amp; 3 &amp; 4 &amp; 5 &amp; 2 &amp;\\
+&amp; 4 &amp; 5 &amp; 1 &amp; 3 &amp;\\
+&amp; 5 &amp; 1 &amp; 2 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{14}\)</span>=-6</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{14}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+4}\)</span><span class="math notranslate nohighlight">\(M_{14}\)</span> ​= (1)(-6)=-6</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{15}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{15}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp;\\
+&amp; 3 &amp; 4 &amp; 5 &amp; 1 &amp;\\
+&amp; 4 &amp; 5 &amp; 1 &amp; 2 &amp;\\
+&amp; 5 &amp; 1 &amp; 2 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{15}\)</span>=6</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{15}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+5}\)</span><span class="math notranslate nohighlight">\(M_{15}\)</span> ​= (1)(6)=6</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\displaystyle
+\begin{aligned}
+detA
+&amp;= 1(-24) + 2(-18) + 3(12) + 4(-6) + 5(6) \\
+&amp;= -24 - 36 + 36 - 24 + 30\\
+&amp;= -18
+\end{aligned}
+\end{split}\]</div>
 </section>
 </section>
 
@@ -785,22 +1307,28 @@ x_1 = -1, \quad x_2 = 4, \quad x_3 = 2
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Matriks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">Definisi Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmatika-matriks">Operasi Aritmatika Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-penjumlahan-dalam-matriks">Operasi Penjumlahan dalam Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-pengurangan-dalam-matriks">Operasi Pengurangan dalam Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-perkalian-dalam-matriks">Operasi Perkalian dalam Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks-dengan-skalar">Perkalian Matriks dengan Skalar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks">DEFINISI MATRIKS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-aritmatika-matriks">OPERASI ARITMATIKA MATRIKS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-matriks">1. Penjumlahan Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matriks">2. Pengurangan Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-matriks">3. Perkalian Matriks</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">SOAL</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian">Penyelesaian:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-invers-nya-di-cari-dengan-operasi-elementer">selesaikan dengan menggunakan invers, invers nya di cari dengan operasi elementer.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal">SOAL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks">Determinan matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-matriks">Minor Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">Kofaktor Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hubungan-matriks-minor-kofaktor">Hubungan Matriks Minor &amp; Kofaktor</a></li>
 </ul>
 </li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-dengan-konsep-minor-dan-kofactor-matriks-contoh-matriks-3x3-4x4-dan-5x5">Mencari Determinan Dengan Konsep Minor dan Kofactor Matriks. Contoh Matriks 3x3 4x4 dan 5x5</a></li>
+</ul>
   </nav></div>
 
 </div></div>
