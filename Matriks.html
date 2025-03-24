@@ -579,11 +579,14 @@ jadi hasilnya
 <h2>SOAL<a class="headerlink" href="#soal" title="Link to this heading">#</a></h2>
 <section id="selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">
 <h3>Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE<a class="headerlink" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe" title="Link to this heading">#</a></h3>
-<p>\begin{aligned}
--7x_1 - 6x_2 - 12x_3 &amp;= -33 \
-5x_1 + 5x_2 + 7x_3 &amp;= 24 \
-x_1 + 4x_3 &amp;= 5
-\end{aligned}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+    -7x_1 - 6x_2 - 12x_3 &amp;= -33 \\
+    5x_1 + 5x_2 + 7x_3 &amp;= 24 \\
+    x_1 + 4x_3 &amp;= 5
+\end{aligned}
+\end{split}\]</div>
 <ul class="simple">
 <li><p>Tuliskan dalam bentuk matriks</p></li>
 </ul>
@@ -591,22 +594,28 @@ x_1 + 4x_3 &amp;= 5
 \[
 Ax = b
 \]</div>
-<p><span class="math notranslate nohighlight">\(
+<div class="math notranslate nohighlight">
+\[
 A =
-\)</span></p>
-<p>\begin{bmatrix}
--7 &amp; -6 &amp; -12 \
-5 &amp; 5 &amp; 7 \
-1 &amp; 0 &amp; 4
-\end{bmatrix}</p>
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+    -7 &amp; -6 &amp; -12 \\
+    5 &amp; 5 &amp; 7 \\
+    1 &amp; 0 &amp; 4
+\end{bmatrix}
+\end{split}\]</div>
 <p><span class="math notranslate nohighlight">\(
 b =
-\)</span></p>
-<p>\begin{bmatrix}
--33 \
-24 \
-5
-\end{bmatrix}</p>
+\)</span>
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+    -33 \\
+    24 \\
+    5
+\end{bmatrix}
+\)</span>$</p>
 <ul class="simple">
 <li><p>Menyusun matriks argumen, merubah bagian kiri menjadi matriks I sehingga bagian kanan berubah menjadi A invers.</p></li>
 </ul>
@@ -614,20 +623,23 @@ b =
 \[
 [A | I]
 \]</div>
-<p>\begin{bmatrix}
--7 &amp; -6 &amp; -12 &amp; | 1 &amp; 0 &amp; 0 \
-5 &amp; 5 &amp; 7 &amp; | 0 &amp; 1 &amp; 0 \
-1 &amp; 0 &amp; 4 &amp; | 0 &amp; 0 &amp; 1
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+    -7 &amp; -6 &amp; -12 &amp; | 1 &amp; 0 &amp; 0 \\
+    5 &amp; 5 &amp; 7 &amp; | 0 &amp; 1 &amp; 0 \\
+    1 &amp; 0 &amp; 4 &amp; | 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
 <ul class="simple">
-<li><p>Bagi baris pertama dengan -7, agar elemen (1,1) menjadi 1</p></li>
-</ul>
-<p>\begin{bmatrix}
-1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
-5 &amp; 5 &amp; 7 &amp; \big| &amp; 0 &amp; 1 &amp; 0 \
-1 &amp; 0 &amp; 4 &amp; \big| &amp; 0 &amp; 0 &amp; 1
-\end{bmatrix}</p>
-<ul class="simple">
+<li><p>Bagi baris pertama dengan -7, agar elemen (1,1) menjadi 1
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+ 1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+ 5 &amp; 5 &amp; 7 &amp; \big| &amp; 0 &amp; 1 &amp; 0 \\
+ 1 &amp; 0 &amp; 4 &amp; \big| &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\)</span>$</p></li>
 <li><p>Nol kan elemen di bawahnya menggunakan operasi:</p></li>
 </ul>
 <div class="math notranslate nohighlight">
@@ -638,11 +650,14 @@ R_2 \leftarrow R_2 - 5R_1
 \[
 R_3 \leftarrow R_3 - R_1
 \]</div>
-<p>\begin{bmatrix}
-1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
-0 &amp; \frac{5}{7} &amp; -\frac{13}{7} &amp; \big| &amp; \frac{5}{7} &amp; 1 &amp; 0 \
-0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+    1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+    0 &amp; \frac{5}{7} &amp; -\frac{13}{7} &amp; \big| &amp; \frac{5}{7} &amp; 1 &amp; 0 \\
+    0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
 <ul class="simple">
 <li><p>Ubah elemen (2,2) menjadi 1, dengan cara baris kedua di bagi 5/7</p></li>
 </ul>
@@ -650,11 +665,14 @@ R_3 \leftarrow R_3 - R_1
 \[
 R_2 \leftarrow R_2 \times \frac{7}{5}
 \]</div>
-<p>\begin{bmatrix}
-1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
-0 &amp; 1 &amp; -\frac{13}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
-0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+    1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \\
+    0 &amp; 1 &amp; -\frac{13}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \\
+    0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
 <ul class="simple">
 <li><p>Nol kan elemen di atas dan bawah (2,2) menggunakan operasi:</p></li>
 </ul>
@@ -666,11 +684,14 @@ R_1 \leftarrow R_1 - \frac{6}{7} R_2
 \[
 R_3 \leftarrow R_3 - \frac{6}{7} R_2
 \]</div>
-<p>\begin{bmatrix}
-1 &amp; 0 &amp; \frac{102}{35} &amp; -\frac{13}{35} &amp; \big| &amp; -\frac{6}{5} &amp; 0 \
-0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
-0 &amp; 0 &amp; \frac{26}{35} &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; 0 &amp; 1
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+    1 &amp; 0 &amp; \frac{102}{35} &amp; -\frac{13}{35} &amp; \big| &amp; -\frac{6}{5} &amp; 0 \\
+    0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \\
+    0 &amp; 0 &amp; \frac{26}{35} &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
 <ul class="simple">
 <li><p>Ubah elemen (3,3) menjadi 1, dengan cara baris ketiga dibagi dengan 26/35</p></li>
 </ul>
@@ -678,11 +699,14 @@ R_3 \leftarrow R_3 - \frac{6}{7} R_2
 \[
 R_3 \leftarrow R_3 \times \frac{35}{26}
 \]</div>
-<p>\begin{bmatrix}
-1 &amp; 0 &amp; \frac{102}{35} &amp; -\frac{13}{35} &amp; \big| &amp; -\frac{6}{5} &amp; 0 \
-0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
-0 &amp; 0 &amp; 1 &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; \frac{35}{26} &amp; 1
-\end{bmatrix}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+    1 &amp; 0 &amp; \frac{102}{35} &amp; -\frac{13}{35} &amp; \big| &amp; -\frac{6}{5} &amp; 0 \\
+    0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \\
+    0 &amp; 0 &amp; 1 &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; \frac{35}{26} &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
 <ul class="simple">
 <li><p>Nol kan elemen diatas (3,3)</p></li>
 </ul>
@@ -693,15 +717,15 @@ R_1 \leftarrow R_1 - \frac{102}{35} R_3
 <p>diperoleh inversnya yaitu:</p>
 <p><span class="math notranslate nohighlight">\(
 A^{-1} =
-\)</span></p>
-<p>\begin{bmatrix}
-\frac{26}{35} &amp; \frac{102}{65} &amp; \frac{102}{91} \
--\frac{7}{5} &amp; \frac{13}{5} &amp; -\frac{35}{26} \
--\frac{13}{26} &amp; -\frac{42}{26} &amp; \frac{35}{26}
-\end{bmatrix}</p>
-<ol class="arabic simple" start="9">
-<li><p>Kalikan A invers dengan b</p></li>
-</ol>
+\)</span>
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+    \frac{26}{35} &amp; \frac{102}{65} &amp; \frac{102}{91} \\
+    -\frac{7}{5} &amp; \frac{13}{5} &amp; -\frac{35}{26} \\
+    -\frac{13}{26} &amp; -\frac{42}{26} &amp; \frac{35}{26}
+\end{bmatrix}
+\)</span>$
+9. Kalikan A invers dengan b</p>
 <div class="math notranslate nohighlight">
 \[
 x = A^{-1} b
