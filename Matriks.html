@@ -463,61 +463,6 @@ jadi hasilnya
 \end{bmatrix}
 \quad
 \)</span>$</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matriks penjumlahan</span>
-<span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
-    <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen [</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">][</span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">]: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-
-<span class="k">def</span> <span class="nf">tambah_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[[</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks A:&quot;</span><span class="p">)</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks B:&quot;</span><span class="p">)</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
-
-<span class="n">hasil</span> <span class="o">=</span> <span class="n">tambah_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil penjumlahan matriks:&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="n">hasil</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Masukkan elemen untuk matriks A:
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="k">return</span> <span class="p">[[</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks A:&quot;</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">9</span> <span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks B:&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="n">B</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
-
-<span class="nn">Cell In[1], line 3,</span> in <span class="ni">input_matriks</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
-<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen [</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">][</span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">]: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-
-<span class="nn">File ~/.local/lib/python3.12/site-packages/ipykernel/kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1279</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1280</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1281</span>     <span class="k">raise</span> <span class="n">StdinNotImplementedError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1282</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_input_request</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1283</span>     <span class="nb">str</span><span class="p">(</span><span class="n">prompt</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1284</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_parent_ident</span><span class="p">[</span><span class="s2">&quot;shell&quot;</span><span class="p">],</span>
-<span class="g g-Whitespace">   </span><span class="mi">1285</span>     <span class="bp">self</span><span class="o">.</span><span class="n">get_parent</span><span class="p">(</span><span class="s2">&quot;shell&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1286</span>     <span class="n">password</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1287</span> <span class="p">)</span>
-
-<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="pengurangan-matriks">
 <h3>2. Pengurangan Matriks<a class="headerlink" href="#pengurangan-matriks" title="Link to this heading">#</a></h3>
@@ -555,46 +500,6 @@ jadi hasilnya
 \end{bmatrix}
 \quad
 \)</span>$</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pengurangan Matriks</span>
-<span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
-    <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen [</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">][</span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">]: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-
-<span class="k">def</span> <span class="nf">pengurangan_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[[</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks A:&quot;</span><span class="p">)</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk matriks B:&quot;</span><span class="p">)</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
-
-<span class="n">hasil</span> <span class="o">=</span> <span class="n">pengurangan_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil pengurangan matriks:&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="n">hasil</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Masukkan elemen untuk matriks A:
-Masukkan elemen [1][1]: 2
-Masukkan elemen [1][2]: 4
-Masukkan elemen [2][1]: 3
-Masukkan elemen [2][2]: 1
-Masukkan elemen untuk matriks B:
-Masukkan elemen [1][1]: 5
-Masukkan elemen [1][2]: 7
-Masukkan elemen [2][1]: 6
-Masukkan elemen [2][2]: 2
-Hasil pengurangan matriks:
-[-3, -3]
-[-3, -1]
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 <section id="perkalian-matriks">
 <h3>3. Perkalian Matriks<a class="headerlink" href="#perkalian-matriks" title="Link to this heading">#</a></h3>
@@ -636,46 +541,6 @@ jadi hasilnya
 \end{bmatrix}
 \quad
 \)</span>$</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Perkalian Matriks (perkalian dua matriks atau lebih)</span>
-<span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
-    <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen baris </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">, kolom </span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-
-<span class="k">def</span> <span class="nf">kali_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[[</span><span class="nb">sum</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk Matriks A:&quot;</span><span class="p">)</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk Matriks B:&quot;</span><span class="p">)</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
-
-<span class="n">hasil</span> <span class="o">=</span> <span class="n">kali_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil perkalian matriks:&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="n">hasil</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Masukkan elemen untuk Matriks A:
-Masukkan elemen baris 1, kolom 1: 1
-Masukkan elemen baris 1, kolom 2: 5
-Masukkan elemen baris 2, kolom 1: 6
-Masukkan elemen baris 2, kolom 2: 2
-Masukkan elemen untuk Matriks B:
-Masukkan elemen baris 1, kolom 1: 9
-Masukkan elemen baris 1, kolom 2: 2
-Masukkan elemen baris 2, kolom 1: 7
-Masukkan elemen baris 2, kolom 2: 8
-Hasil perkalian matriks:
-[44, 42]
-[68, 28]
-</pre></div>
-</div>
-</div>
-</div>
 <ul class="simple">
 <li><p>Perkalian Skalar Matriks</p></li>
 </ul>
@@ -705,41 +570,6 @@ jadi hasilnya
 \end{bmatrix}
 \quad
 \)</span>$</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># perkalian skalar matriks</span>
-<span class="k">def</span> <span class="nf">kali_skalar_matriks</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">A</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[[</span><span class="n">k</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">))]</span>
-
-<span class="k">def</span> <span class="nf">input_matriks</span><span class="p">():</span>
-    <span class="k">return</span> <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Masukkan elemen baris </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">, kolom </span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: &quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
-
-<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan skalar: &quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Masukkan elemen untuk Matriks A:&quot;</span><span class="p">)</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">input_matriks</span><span class="p">()</span>
-
-<span class="n">hasil</span> <span class="o">=</span> <span class="n">kali_skalar_matriks</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil perkalian skalar dengan matriks:&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">baris</span> <span class="ow">in</span> <span class="n">hasil</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">baris</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Masukkan skalar: 3
-Masukkan elemen untuk Matriks A:
-Masukkan elemen baris 1, kolom 1: 4
-Masukkan elemen baris 1, kolom 2: 7
-Masukkan elemen baris 2, kolom 1: 5
-Masukkan elemen baris 2, kolom 2: 8
-Hasil perkalian skalar dengan matriks:
-[12, 21]
-[15, 24]
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 </section>
 <section id="selesaikan-dengan-menggunakan-invers-invers-nya-di-cari-dengan-operasi-elementer">
